@@ -54,7 +54,7 @@
 
         <!-- profil -->
         <section id="profile">
-            <header>
+            <header class="header-profile">
                 <h1>Our Profile</h1>
             </header>
 
@@ -67,7 +67,7 @@
 
         <!-- achievement -->
         <section id="education">
-            <header>
+            <header class="header-education">
                 <h1>Education</h1>
             </header>
 
@@ -80,41 +80,41 @@
 
         <!-- message us -->
         <section id="contact">
-            <header>
+            <header class="header-message-us">
                 <h1>Message Us</h1>
             </header>
 
             <!-- message us content -->
             <div class="message-us-content">
 
-                <form name="message-form" onsubmit="return validateForm()">
-                    nama:
+                <form name="message-form" onsubmit="return validateForm()" class="form-container">
+                    <label for="full-name">Nama:</label>
                     <input placeholder="nama" type="text" name="full-name"/>
                     <br />
 
-                    tanggal lahir:
+                    <label for="birth-date">Tanggal Lahir:</label>
                     <input type="date" name="birth-date"/>
                     <br />
 
-                    jenis kelamin:
-                    <input type="radio" id="male" name="gender" value="male"/>
-                    <label for="male">laki-laki</label>
-                    <input type="radio" id="female" name="gender" value="female"/>
-                    <label for="female">perempuan</label>
+                    <label>Jenis Kelamin:</label>
+                    <input type="radio" id="male" name="gender" value="male">
+                    <label0 for="male">Laki-laki</label0>
+                    <input type="radio" id="female" name="gender" value="female">
+                    <label0 for="female">Perempuan</label0>                    
                     <br />
 
-                    pesan:
+                    <label for="messages">Pesan:</label>
                     <textarea placeholder="pesan" name="messages"></textarea>
                     <br />
 
                     <input type="submit" value="submit"/>
                 </form>
 
-                <div>
-                    <p>nama: <span id="sender-full-name"></span></p>
-                    <p>tanggal lahir: <span id="sender-birth-date"></span></p>
-                    <p>jenis kelamin: <span id="sender-gender"></span></p>
-                    <p>pesan: <span id="sender-messages"></span></p>
+                <div class="output-container">
+                    <p><span class="label">nama:</span> <span id="sender-full-name"></span></p>
+                    <p><span class="label">tanggal lahir:</span> <span id="sender-birth-date"></span></p>
+                    <p><span class="label">jenis kelamin:</span> <span id="sender-gender"></span></p>
+                    <p><span class="label">pesan:</span> <span id="sender-messages"></span></p>
                 </div>
             </div>
 

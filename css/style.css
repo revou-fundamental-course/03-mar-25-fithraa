@@ -78,9 +78,17 @@ nav > a {
     background-image: url(https://picsum.photos/900);
 }
 
+.header-profile{
+    text-align: center;
+}
+
 .our-profile-content{
     border: 1px solid;
     height: 500px;
+}
+
+.header-education{
+    text-align: center;
 }
 
 .education-content{
@@ -88,9 +96,73 @@ nav > a {
     height: 500px;
 }
 
-.message-us-content{
-    border: 1px solid;
-    height: 500px;
+.header-message-us{
+    text-align: center;
+}
+
+.message-us-content {
+    display: flex; 
+    justify-content: space-between; /* Membuat jarak antara form dan output */
+    align-items: flex-start; /* Menyelaraskan elemen ke atas */
+    gap: 20px; /* Jarak antara form dan output */
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    max-width: 800px; /* Lebar maksimum container */
+    margin: 0 auto; /* Pusatkan container */
+}
+
+.form-container {
+    flex: 1; /* Form mengambil ruang yang tersedia */
+    max-width: 400px; /* Lebar maksimum form */
+    border-right: 1px solid #ccc; /*Garis pemisah antara form dan output*/
+}
+
+label {
+    display: block; /* Membuat label berada di atas input */
+    margin-top: 10px;
+}
+
+.output-container {
+    flex: 1; /* Output mengambil ruang yang tersedia */
+    max-width: 400px; /* Lebar maksimum output */
+    padding: 10px;
+    /* border-left: 1px solid #ccc; Garis pemisah antara form dan output */
+    padding-left: 20px;
+}
+
+input[type="text"],
+input[type="date"],
+textarea {
+    width: 75%; 
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input[type="radio"] {
+    margin-right: 5px;
+}
+
+input[type="submit"] {
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+.output-container .label {
+    display: inline-block;
+    width: 100px; /* Atur lebar label sesuai kebutuhan */
+    margin-right: 20px; /* Jarak antara label dan nilai */
 }
 
 footer{
