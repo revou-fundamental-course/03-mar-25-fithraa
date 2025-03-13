@@ -21,6 +21,7 @@
     align-items: center;
     border-bottom: 2px solid black;
     padding: 16px 24px;
+    background-color: lightgoldenrodyellow;
 }
 
 .main-logo{
@@ -46,10 +47,12 @@ nav > a {
     text-decoration: none;
     color: black;
     text-align: center;
+    background-color: #ffe56d;
 }
 
 .header-home{
     text-align: center;
+    margin-top: 50px;
 }
 
 .banner-img{
@@ -57,6 +60,10 @@ nav > a {
     background-position: center;
     background-size: cover;
     height: 500px;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 50px;
+    margin-top: 20px;
 }
 
 .banner-1{
