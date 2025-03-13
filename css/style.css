@@ -1,9 +1,26 @@
 /* ini file css */
 
+@media only screen and (max-width: 600px) {
+    .main-header{
+        flex-direction: column;
+    }
+
+    .main-nav{
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .main-logo{
+        margin-bottom: 16px;
+    }
+}
+
 .main-header{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    border-bottom: 2px solid black;
+    padding: 16px 24px;
 }
 
 .main-logo{
@@ -15,6 +32,10 @@
     border-radius: 50%;
 }
 
+.main-nav{
+    display: flex;
+}
+
 nav{
     display: flex;
 }
@@ -24,11 +45,26 @@ nav > a {
     border: 1px solid;
     text-decoration: none;
     color: black;
+    text-align: center;
 }
 
 .banner-img{
-    border: 1px solid;
+    background-image: url(https://picsum.photos/1000);
+    background-position: center;
+    background-size: cover;
     height: 500px;
+}
+
+.banner-1{
+    background-image: url(https://picsum.photos/700);
+}
+
+.banner-2{
+    background-image: url(https://picsum.photos/800);
+}
+
+.banner-3{
+    background-image: url(https://picsum.photos/900);
 }
 
 .our-profile-content{
