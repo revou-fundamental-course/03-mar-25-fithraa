@@ -79,19 +79,21 @@ nav > a {
     background-image: url(https://picsum.photos/1000);
     background-position: center;
     background-size: cover;
+    /* background-size: contain; */
     height: 500px;
     margin-left: 50px;
     margin-right: 50px;
     margin-bottom: 50px;
     margin-top: 20px;
+    box-shadow: 9px 9px 9px rgba(0, 0, 0, 0.5);
 }
 
 .banner-1{
-    background-image: url(https://picsum.photos/700);
+    background-image: url(../assets/dafi.jpg);
 }
 
 .banner-2{
-    background-image: url(https://picsum.photos/800);
+    background-image: url(../assets/upn.jpeg);
 }
 
 .banner-3{
@@ -151,14 +153,44 @@ nav > a {
     text-align: left;
 }
 
-.header-education{
+/* Styling untuk header education */
+.header-education {
     text-align: center;
     padding-top: 10px;
 }
 
-.education-content{
-    border: 1px solid;
-    height: 500px;
+/* Styling untuk education content */
+.education-content {
+    /* border: 1px solid; */
+    /* height: 500px; */
+    display: flex; /* Mengatur tata letak gambar secara horizontal */
+    justify-content: center; /* Pusatkan gambar secara horizontal */
+    align-items: center; /* Pusatkan gambar secara vertikal */
+    gap: 150px; /* Jarak antara gambar */
+    padding: 20px; /* Padding untuk ruang di dalam container */
+}
+
+/* Styling untuk setiap item education */
+.education-item {
+    text-align: center; /* Pusatkan teks dan gambar */
+}
+
+/* Styling untuk gambar bulat */
+.circle-image {
+    width: 300px; /* Lebar gambar */
+    height: 300px; /* Tinggi gambar */
+    border-radius: 50%; /* Membuat gambar berbentuk bulat */
+    object-fit: cover; /* Memastikan gambar tidak terdistorsi */
+    border: 2px solid #333; /* Garis tepi untuk gambar */
+    background-size: contain;
+    box-shadow: 9px 9px 12px rgba(0, 0, 0, 0.5);
+}
+
+/* Styling untuk keterangan gambar */
+.education-item h6 {
+    
+    font-size: 20px; /* Ukuran teks */
+    color: #333; /* Warna teks */
 }
 
 .header-message-us{
