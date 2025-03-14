@@ -97,7 +97,21 @@ nav > a {
 }
 
 .banner-3{
-    background-image: url(https://picsum.photos/900);
+    background-image: url(../assets/boyo.jpg);
+}
+
+#change{
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #ffe56d;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+}
+
+#change:hover {
+    background-color: orange;
 }
 
 .header-profile{
@@ -136,6 +150,10 @@ nav > a {
     background-color: #f9f9f9;
     border-radius: 5px;
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+}
+
+.profile-item:hover {
+    background-color: rgb(212, 209, 202);
 }
 
 /* Styling untuk label */
@@ -184,6 +202,12 @@ nav > a {
     border: 2px solid #333; /* Garis tepi untuk gambar */
     background-size: contain;
     box-shadow: 9px 9px 12px rgba(0, 0, 0, 0.5);
+}
+
+.circle-image:hover {
+    transform: scale(1.1); /* Membesar saat dihover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Bayangan saat dihover */
+    cursor: pointer; /* Ubah kursor menjadi pointer */
 }
 
 /* Styling untuk keterangan gambar */

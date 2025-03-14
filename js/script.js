@@ -70,3 +70,11 @@ function showbanner() {
 }
 
 setInterval(nextbanner, 3000);
+
+// Ambil elemen logo
+const logo = document.getElementById('logo');
+
+// Tambahkan event listener untuk klik
+logo.addEventListener('click', () => {
+    window.location.href = '#home'; // Arahkan ke #home
+});
