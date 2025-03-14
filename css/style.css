@@ -1,20 +1,5 @@
 /* ini file css */
 
-@media only screen and (max-width: 600px) {
-    .main-header{
-        flex-direction: column;
-    }
-
-    .main-nav{
-        flex-direction: column;
-        width: 100%;
-    }
-
-    .main-logo{
-        margin-bottom: 16px;
-    }
-}
-
 body{
     padding-top: 80px;
 }
@@ -47,6 +32,7 @@ body{
 
 .main-nav{
     display: flex;
+    gap: 10px; /* Jarak antara link */
 }
 
 nav{
@@ -68,6 +54,49 @@ nav > a {
 
 .main-nav a:hover {
     background-color: rgba(0, 0, 0, 0.1); /* Efek hover */
+}
+
+/* Hamburger icon styling */
+.hamburger {
+    display: none; /* Sembunyikan ikon hamburger di layar besar */
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.hamburger span {
+    width: 25px;
+    height: 3px;
+    background-color: black;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+@media only screen and (max-width: 600px) {
+    .hamburger {
+        display: flex; /* Tampilkan ikon hamburger di layar kecil */
+    }
+
+    .main-nav {
+        display: none; /* Sembunyikan menu navigasi di layar kecil */
+        flex-direction: column; /* Mengubah tata letak navigasi menjadi vertikal */
+        width: 100%; /* Lebar penuh */
+        gap: 5px; /* Jarak antara link lebih kecil */
+        position: absolute;
+        top: 75px; /* Sesuaikan dengan tinggi header */
+        left: 0;
+        background-color: lightgoldenrodyellow;
+        padding: 10px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    }
+
+    .main-nav.active {
+        display: flex; /* Tampilkan menu navigasi saat aktif */
+    }
+
+    nav > a {
+        width: 100%; /* Lebar penuh untuk setiap link */
+        box-sizing: border-box; /* Padding dan border termasuk dalam lebar */
+    }
 }
 
 .header-home{

@@ -78,3 +78,12 @@ const logo = document.getElementById('logo');
 logo.addEventListener('click', () => {
     window.location.href = '#home'; // Arahkan ke #home
 });
+
+// Ambil elemen hamburger dan menu navigasi
+const hamburger = document.getElementById('hamburger');
+const mainNav = document.getElementById('main-nav');
+
+// Tambahkan event listener untuk toggle menu
+hamburger.addEventListener('click', () => {
+    mainNav.classList.toggle('active'); // Toggle class 'active' pada menu navigasi
+});
