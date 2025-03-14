@@ -326,3 +326,64 @@ input[type="submit"]:hover {
     height: 100px;
     background-color: #d4bc50;
 }
+
+/* Responsive styling untuk layar dengan lebar maksimum 600px */
+@media only screen and (max-width: 600px) {
+    /* Section Profile */
+    .our-profile-content {
+        padding: 10px; /* Padding lebih kecil */
+    }
+
+    .profile-container {
+        gap: 10px; /* Jarak antar item lebih kecil */
+    }
+
+    .profile-item {
+        padding: 15px; /* Padding lebih kecil */
+        padding-right: 20px; /* Padding kanan lebih kecil */
+        padding-left: 20px; /* Padding kiri lebih kecil */
+    }
+
+    .profile-item .label {
+        margin-right: 10px; /* Jarak antara label dan value lebih kecil */
+        width: 80px; /* Lebar label lebih kecil */
+    }
+
+    /* Section Education */
+    .education-content {
+        flex-direction: column; /* Mengubah tata letak menjadi vertikal */
+        gap: 20px; /* Jarak antara gambar lebih kecil */
+    }
+
+    .circle-image {
+        width: 200px; /* Lebar gambar lebih kecil */
+        height: 200px; /* Tinggi gambar lebih kecil */
+    }
+
+    .education-item h6 {
+        font-size: 16px; /* Ukuran teks lebih kecil */
+    }
+
+    /* Section Message Us */
+    .message-us-content {
+        flex-direction: column; /* Mengubah tata letak menjadi vertikal */
+        gap: 20px; /* Jarak antara form dan output lebih kecil */
+        padding: 10px; /* Padding lebih kecil */
+    }
+
+    .form-container {
+        max-width: 100%; /* Lebar form penuh */
+        border-right: none; /* Hilangkan garis pemisah */
+    }
+
+    .output-container {
+        max-width: 100%; /* Lebar output penuh */
+        padding-left: 0; /* Hilangkan padding kiri */
+    }
+
+    input[type="text"],
+    input[type="date"],
+    textarea {
+        width: 100%; /* Lebar input penuh */
+    }
+}
